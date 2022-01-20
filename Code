@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() 
+{
+ int a[10],i,x,y;
+ for(i=0;i<10;i++)
+ {
+  printf("\n Enter Interger Value [%d] : ",i+1);
+  scanf("%d",&a[i]);
+  if(i==0)
+  {
+   x=y=a[i];
+  }
+  else
+  {
+   if(x>a[i])
+   {
+    x=a[i];
+   }
+   if(y<a[i])
+   {
+    y=a[i];
+   }
+  }
+ }
+ printf("\n Minimum : %d",x);
+ printf("\n Maximum : %d",y);
+ return 0;
+}
+
